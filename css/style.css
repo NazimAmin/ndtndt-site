@@ -10,7 +10,7 @@ body {
     background-color: #203E5F;
 }
 
-.the-bae {
+.ndt {
     text-align: center;
     position: fixed;
     top: 50%;
@@ -28,18 +28,19 @@ h3 {
     animation: data 5s steps(60, end);
 }
 
-.bae {
-    color: #FF6575;
-    padding-left: 15%;
-    width: 30em;
-    white-space: nowrap;
-    overflow: hidden;
-    -webkit-animation: bae 5s;
-    animation: bae 5s;
+#ndt2 {
+    visibility: hidden;
 }
 
-.bae h2 {
-    font-weight: 300;
+.ndt2 {
+    color: #D8E9F0;
+    font-size: 1.40em;
+    font-weight: 200;
+    margin-top: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: ndt2 5s steps(60, end);
+    animation: ndt2 5s steps(60, end);
 }
 
 @keyframes data {
@@ -60,20 +61,20 @@ h3 {
     }
 }
 
-@keyframes bae {
+@keyframes ndt2 {
     from {
-        height: 0;
+        width: 0;
     }
     to {
-        height: 64px;
+        width: 300px;
     }
 }
 
-@-webkit-keyframes bae {
+@-webkit-keyframes ndt2 {
     from {
-        height: 0;
+        width: 0;
     }
     to {
-        height: 64px;
+        width: 300px;
     }
 }

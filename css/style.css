@@ -137,6 +137,18 @@ h3 {
     text-decoration-color: black !important;
 }
 
+@media (max-width: 480px) {
+    .ndt {
+        top: 20%;
+    }
+    .ndt2 {
+        top: 20%;
+    }
+    .contact-card-position {
+        margin-top: 250px;
+    }
+}
+
 @keyframes data {
     from {
         width: 0;

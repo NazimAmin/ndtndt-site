@@ -12,7 +12,7 @@ body {
     color: #91F3FC;
     text-align: center;
     position: fixed;
-    top: 30%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -40,35 +40,26 @@ h3 {
     animation: ndt2 5s steps(60, end);
 }
 
+.contact-card-position {
+    margin-top: 40%;
+}
+
 .contact-card {
-    display: inline-block;
-    margin: 30px;
+    margin-bottom: 30px;
+    display: block;
     position: relative;
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    text-align: center;
+    width: 100%;
     border-radius: 2px;
     box-sizing: border-box;
     overflow: hidden;
     border: none;
     background-color: #607D8B;
     background-position: center;
-    cursor: pointer;
-}
-
-.contact-card-position {
-    margin-top: 30%;
-}
-
-.light {
-    background-color: #3B939B !important;
-    color: black;
 }
 
 .profile-container {
     width: 230px;
-    height: 100%;
+    height: 300px;
     margin: 0 auto;
     position: relative;
     vertical-align: middle;
@@ -76,16 +67,25 @@ h3 {
 
 .profile-picture-container {
     left: 0;
-    margin: 5px auto 15px;
+    margin: 0 auto 15px;
+    margin-top: 5px;
     position: relative;
     top: 0;
-    display: table;
+}
+
+.light {
+    background-color: #3B939B !important;
+    color: black;
 }
 
 .rounded-photo {
     width: 150px;
     height: 150px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     border-radius: 50%;
+    display: table;
+    margin: 0 auto;
 }
 
 .profile-content {
@@ -132,12 +132,7 @@ h3 {
     margin-bottom: 15px;
 }
 
-.profile-content-bio > a {
-    color: black;
-    text-decoration-color: black !important;
-}
-
-@media (max-width: 480px) {
+@media (min-width: 480px) {
     .ndt {
         top: 20%;
     }
@@ -145,7 +140,22 @@ h3 {
         top: 20%;
     }
     .contact-card-position {
-        margin-top: 250px;
+        margin-top: 40%;
+    }
+}
+
+@media (min-width: 620px) {
+    .ndt {
+        top: 25%;
+    }
+    .ndt2 {
+        top: 25%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .contact-card-position {
+        margin-top: 30%;
     }
 }
 

@@ -44,11 +44,21 @@ h3 {
     margin-top: 40%;
 }
 
+.center-card {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
 .contact-card {
+    width: 300px;
+    height: 300px;
     margin-bottom: 30px;
     display: block;
     position: relative;
-    width: 100%;
     border-radius: 2px;
     box-sizing: border-box;
     overflow: hidden;
@@ -58,8 +68,6 @@ h3 {
 }
 
 .profile-container {
-    width: 230px;
-    height: 300px;
     margin: 0 auto;
     position: relative;
     vertical-align: middle;
@@ -92,11 +100,8 @@ h3 {
     display: block;
     font-size: 12px;
     height: auto;
-    margin: 0;
     text-align: center;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
     vertical-align: middle;
 }
 
@@ -104,13 +109,11 @@ h3 {
     color: #91F3FC;
     display: inline-block;
     margin-bottom: 10px;
-    white-space: nowrap;
     font-size: 18px;
 }
 
 .profile-content-info {
     overflow: hidden;
-    text-overflow: ellipsis;
     font-size: 12px;
 }
 
@@ -124,12 +127,8 @@ h3 {
 
 .profile-content-bio {
     font-size: 12px;
-    display: block;
-    margin: 0 auto;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 @media (min-width: 480px) {

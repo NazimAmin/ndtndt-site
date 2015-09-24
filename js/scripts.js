@@ -11,9 +11,5 @@ $(window).resize(function () {
     } else if (document.documentElement.clientWidth >= 620) {
         $('.col-md-4').addClass('col-xs-6').removeClass('col-md-4');
     }
-    if (document.documentElement.clientWidth >= 720) {
-        $('.col-xs-6').addClass('col-md-4');
-    } else {
-        $('.col-xs-6').addClass('col-md-4');
-    }
-}).resize()
+    $('.col-xs-6').addClass('col-md-4');
+}).resize();

@@ -11,7 +11,7 @@ body {
 .ndt {
     color: #91F3FC;
     text-align: center;
-    position: fixed;
+    position: absolute;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
